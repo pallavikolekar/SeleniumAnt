@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SuiteOne">
+
+<!-- If add more test cases In this suite, You need to add them as bellow. -->
+
+<test name="Test1">
+    <classes>
+        <class name="scripts.GoogleDemo" ></class>  
+    </classes>
+</test>
+
+<test name="Test2">
+    <classes>
+        <class name="scripts.TwitterDemo" ></class>  
+    </classes>
+</test>
+
+<test name="Test3">
+  <classes>
+       <class name="scripts.YahooDemo"></class>
+  </classes>
+</test>
+</suite>

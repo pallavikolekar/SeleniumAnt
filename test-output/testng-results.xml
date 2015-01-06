@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SuiteOne" duration-ms="17434" started-at="2015-01-06T05:29:35Z" finished-at="2015-01-06T05:29:52Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="17324" started-at="2015-01-06T05:29:35Z" finished-at="2015-01-06T05:29:52Z">
+      <class name="scripts.GoogleDemo">
+        <test-method status="PASS" signature="InitilizeDriver()[pri:0, instance:scripts.GoogleDemo@229a94b3]" name="InitilizeDriver" is-config="true" duration-ms="16739" started-at="2015-01-06T10:59:35Z" finished-at="2015-01-06T10:59:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitilizeDriver -->
+        <test-method status="FAIL" signature="testGoogle()[pri:0, instance:scripts.GoogleDemo@229a94b3]" name="testGoogle" duration-ms="126" started-at="2015-01-06T10:59:52Z" finished-at="2015-01-06T10:59:52Z">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[This is Title verification expected:<Google[1]> but was:<Google[]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: This is Title verification expected:<Google[1]> but was:<Google[]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at scripts.GoogleDemo.testGoogle(GoogleDemo.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogle -->
+        <test-method status="PASS" signature="DestroyDriver(org.testng.ITestResult)[pri:0, instance:scripts.GoogleDemo@229a94b3]" name="DestroyDriver" is-config="true" duration-ms="444" started-at="2015-01-06T10:59:52Z" finished-at="2015-01-06T10:59:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGoogle status=FAILURE method=GoogleDemo.testGoogle()[pri:0, instance:scripts.GoogleDemo@229a94b3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DestroyDriver -->
+      </class> <!-- scripts.GoogleDemo -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="1" started-at="2015-01-06T05:29:52Z" finished-at="2015-01-06T05:29:52Z">
+      <class name="scripts.TwitterDemo">
+        <test-method status="PASS" signature="testTwitter()[pri:0, instance:scripts.TwitterDemo@41683cc5]" name="testTwitter" duration-ms="0" started-at="2015-01-06T10:59:52Z" finished-at="2015-01-06T10:59:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTwitter -->
+      </class> <!-- scripts.TwitterDemo -->
+    </test> <!-- Test2 -->
+    <test name="Test3" duration-ms="2" started-at="2015-01-06T05:29:52Z" finished-at="2015-01-06T05:29:52Z">
+      <class name="scripts.YahooDemo">
+        <test-method status="PASS" signature="testYahoo()[pri:0, instance:scripts.YahooDemo@52954621]" name="testYahoo" duration-ms="0" started-at="2015-01-06T10:59:52Z" finished-at="2015-01-06T10:59:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testYahoo -->
+        <test-method status="PASS" signature="testYahooLink()[pri:0, instance:scripts.YahooDemo@52954621]" name="testYahooLink" duration-ms="0" started-at="2015-01-06T10:59:52Z" finished-at="2015-01-06T10:59:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testYahooLink -->
+      </class> <!-- scripts.YahooDemo -->
+    </test> <!-- Test3 -->
+  </suite> <!-- SuiteOne -->
+</testng-results>
